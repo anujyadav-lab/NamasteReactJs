@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+   
     
-    <div id="root"></div>
+    <div id="root">Hi</div>
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -17,19 +19,9 @@
 } 
 script object - script element or script tag.-->
 
-<script>
-    const headingElement = React.createElement('h1',{},'har har mahadev');
-    
-    // const containerElement = ReactDOM.createRoot(document.getElementById('root'));
-    const container = document.getElementById('root');
-    
-    // containerElement.render(headingElement)
-    
-    ReactDOM.render(headingElement,container)
-    
-    // can done also like this BUT: react-dom.development.js:73 Warning: ReactDOM.render is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17.
-    
-    </script>
+<script src="./App.js">
+   
+ </script>
 
 </body>
 </html>
