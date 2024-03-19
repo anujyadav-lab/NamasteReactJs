@@ -1,0 +1,33 @@
+{
+  "name": "namaste-reactjs",
+  "version": "1.0.0",
+  "description": "this is namaste react by akhsay saini",
+
+  "scripts": {
+    "test": "jest "
+   
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anujyadav-lab/NamasteReactJs.git"
+  },
+  "keywords": [],
+  "author": "anuj yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anujyadav-lab/NamasteReactJs/issues"
+  },
+  "homepage": "https://github.com/anujyadav-lab/NamasteReactJs#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 2 versions"
+  ]
+}
