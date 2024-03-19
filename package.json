@@ -4,7 +4,9 @@
   "description": "this is namaste react by akhsay saini",
 
   "scripts": {
-    "test": "jest "
+    "test": "jest ",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
    
 
   },
