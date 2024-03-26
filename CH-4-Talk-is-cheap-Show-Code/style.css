@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+border: 2px solid black;
+
+
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav-items ul{
+    font-size: 23px;
+
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav-items  ul  li {
+padding: 10px;
+margin: 10px;
+
+}
+
+.res-card{
+    border: 2px solid blue;
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+
+
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+.search{
+    padding: 40px;
+
+}
+
+.res-logo{
+  width: 100%;
+  height: 40%;
+
+}
+
+.res-container{
+    display: flex;
+    /* padding: 10px; */
+    margin: 10px; 
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap; 
+    justify-content: center;   
+    
+}
