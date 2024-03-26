@@ -1,13 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Bebas+Neue&family=Caveat&family=Pacifico&family=Permanent+Marker&display=swap');
+
+*{
+    font-family: "Permanent Marker", cursive;
+    margin: 0;
+
+}
+
 .header{
     display: flex;
     justify-content: space-between;
-border: 2px solid black;
-
+/* border: 2px solid black; */
+background-color: rgb(169, 242, 206);
 
 }
 
 .logo{
-    width: 200px;
+    border-radius: 100px;
+    /* height: 50px; */
+        width: 114px;
+    height: 102px;
+
 }
 
 .nav-items ul{
@@ -24,11 +37,22 @@ margin: 10px;
 
 }
 
+.body{
+    background-color: #e1ecce;
+    padding-bottom: 1px;
+    padding-top: 1px;
+
+}
+
 .res-card{
     border: 2px solid blue;
     width: 200px;
     height: 300px;
     padding: 10px;
+    margin: 10px;
+    /* justify-content: s; */
+    border: none;
+    border-radius: 10px;
 
 
 }
@@ -41,8 +65,34 @@ margin: 10px;
 
 
 .search{
-    padding: 40px;
+display: flex;
+justify-content: center;
+background-color: #e1ecce;
 
+
+}
+
+.searchInput{
+    border: 2px solid black ;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+
+}
+#btn-1{
+    border: 2px solid black ;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+.input{
+    width: 100%;
+}
+#btn{
+    display: flex;
 }
 
 .res-logo{
@@ -58,5 +108,28 @@ margin: 10px;
     /* justify-content: space-evenly; */
     flex-wrap: wrap; 
     justify-content: center;   
+    
+}
+
+.main-footer{
+    background-color: #f0f0ff;
+}
+
+.footerAbout{
+    text-align: center;
+    border-bottom: 4px solid #ddd;
+}
+.footerContact{
+    /* display: flex;
+    justify-content: space-between;
+    padding: 10px; */
+    text-align: center;
+    border-bottom: 4px solid #ddd;
+
+
+}
+
+.footerBottom{
+    text-align: center;
     
 }
