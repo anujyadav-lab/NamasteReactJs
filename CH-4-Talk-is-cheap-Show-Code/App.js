@@ -19,12 +19,22 @@ const Header = () => {
           <li>Contact Us</li>
           <li>Cart</li>
         </ul>
-      </div>
+      </div>             
     </div>
   );
 };
 
-const RestaurantCard = () => {
+const resObject = {
+  name:'krishna hotel',
+  rating:'5.0 ⭐',
+  cuisines:'palak paneer',
+  deliveryTime:'30 mins'
+
+}
+
+ 
+const RestaurantCard = (props) => {
+//  const {resData} = props;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
@@ -32,10 +42,10 @@ const RestaurantCard = () => {
         alt="res-logo"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/xvyrclhxftulsglktaek"
       />
-      <h3>Ragbagh Foods</h3>
-      <h4>veg,North Indian,Asian</h4>
-      <h4>4.3 stars</h4>
-      <h4>38 mins</h4>
+      <h3>{props.resData.name}</h3>
+      <h4>{props.resData.cuisines}</h4>
+      <h4>Rating:{props.resData.rating}</h4>
+      <h4>DeliveryTime:{props.resData.deliveryTime}</h4>
     </div>
   );
 };
@@ -55,21 +65,7 @@ const Body = () => {
      
 
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard resData = {resObject}/>
       </div>
     </div>
   );
