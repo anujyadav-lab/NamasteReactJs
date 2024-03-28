@@ -154,10 +154,7 @@ const resList = [
 
 ]
  
-const RestaurantCard = (props) => {
- const {resData} = props;
-
-const {
+const RestaurantCard = ({
   cloudinaryImageId,
   name,
   rating,
@@ -165,7 +162,8 @@ const {
   costForTwo,
   deliveryTime
  
-} = resData;
+} ) => {
+
 
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
@@ -202,7 +200,7 @@ const Body = () => {
       {
         resList.map(
           (restaurant) =>{
-               return  <RestaurantCard key={restaurant.id} resData = {restaurant}/>
+               return  <RestaurantCard key={restaurant.id} {...restaurant}/>
 
           }
 )
