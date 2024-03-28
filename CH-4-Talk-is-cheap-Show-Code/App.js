@@ -24,28 +24,162 @@ const Header = () => {
   );
 };
 
-const resObject = {
+const resList = [
+  {
   name:'krishna hotel',
   rating:'5.0 ⭐',
-  cuisines:'palak paneer',
-  deliveryTime:'30 mins'
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+  id:3 
 
-}
+},
+{
+  name:'her hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+    id:2
 
+},
+
+{
+  name:'my hotel',
+  rating:'4.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+    id:0
+
+},
+{
+  name:'yadav hotel',
+  rating:'7.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+    id:11
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+      id:12
+
+
+},
+{
+  name:'anuj hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+      id:34
+
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+    id:30
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+      id:29
+
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+    id:27
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+      id:23
+
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+
+},
+{
+  name:'narpat hotel',
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+    id:22
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+
+},
+{
+  name:'narpat hotel',
+  id:21,
+  rating:'5.0 ⭐',
+  cuisines:['palak paneer','burger','daal makni'],
+  deliveryTime:'30 mins',
+  costForTwo:'400 rupees',
+  // cloudinaryImageId:'fda9ad56b9d62070fec105cd93693129'
+
+},
+
+
+]
  
 const RestaurantCard = (props) => {
-//  const {resData} = props;
+ const {resData} = props;
+
+const {
+  cloudinaryImageId,
+  name,
+  rating,
+  cuisines,
+  costForTwo,
+  deliveryTime
+ 
+} = resData;
+
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="res-logo"
         alt="res-logo"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/xvyrclhxftulsglktaek"
+        // src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ " + props.resData.cloudinaryImageId}
       />
-      <h3>{props.resData.name}</h3>
-      <h4>{props.resData.cuisines}</h4>
-      <h4>Rating:{props.resData.rating}</h4>
-      <h4>DeliveryTime:{props.resData.deliveryTime}</h4>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(', ')}</h4>
+      <h4>Rating:{rating}</h4>
+      <h4>{costForTwo} for Two</h4>
+      <h4>DeliveryTime:{deliveryTime}</h4>
     </div>
   );
 };
@@ -65,7 +199,14 @@ const Body = () => {
      
 
       <div className="res-container">
-        <RestaurantCard resData = {resObject}/>
+      {
+        resList.map(
+          (restaurant) =>{
+               return  <RestaurantCard key={restaurant.id} resData = {restaurant}/>
+
+          }
+)
+      }
       </div>
     </div>
   );
@@ -92,7 +233,7 @@ const Footer = () => {
       </div>
       <div className="footerBottom">
 
-        <p><bold>&copy;</bold> 2024 Pune Foods MH12. All rights reserved.</p>
+        <p>&copy; 2024 Pune Foods MH12. All rights reserved.</p>
 
       </div>
       </div>
