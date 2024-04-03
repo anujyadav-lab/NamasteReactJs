@@ -7,9 +7,6 @@ import resList from "../utils/MockData";
  const Body = () => {
     return (
       <div className="body">
-   
-  
-       
   
         <div className="res-container">
         {

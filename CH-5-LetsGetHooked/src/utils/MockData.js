@@ -72,7 +72,7 @@ const resList = [
     name:'narpat hotel',
     cloudinaryImageId: "bz9zkh2aqywjhpankb07",
   
-    rating:'5.0 ⭐',
+    rating:'2.0 ⭐',
     cuisines:['palak paneer','burger','daal makni'],
     deliveryTime:'30 mins',
     costForTwo:'400 rupees',
@@ -119,7 +119,7 @@ const resList = [
     name:'narpat hotel',
     cloudinaryImageId: "bz9zkh2aqywjhpankb07",
   
-    rating:'5.0 ⭐',
+    rating:'4.0 ⭐',
     cuisines:['palak paneer','burger','daal makni'],
     deliveryTime:'30 mins',
     costForTwo:'400 rupees',
@@ -132,7 +132,7 @@ const resList = [
     cloudinaryImageId: "bz9zkh2aqywjhpankb07",
   
     id:21,
-    rating:'5.0 ⭐',
+    rating:'3.0 ⭐',
     cuisines:['palak paneer','burger','daal makni'],
     deliveryTime:'30 mins',
     costForTwo:'400 rupees',

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
-import Search from "./components/Search";
+import FilterSearch from "./components/FilterSearch";
 import Body from "./components/Body";
 import RestaurantCard from "./components/RestaurantCard";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <Search />
+      <FilterSearch />
       <Body />
       <Footer />
     </div>

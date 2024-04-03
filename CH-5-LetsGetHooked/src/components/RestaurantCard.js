@@ -1,27 +1,31 @@
-import {CDN_URL} from "../utils/constants"
-import resList from "../utils/MockData";
+  import CDN_URL from "../utils/constants"
+  import resList from "../utils/MockData";
 
-const RestaurantCard = (props) => {
-  const { resData } = props;
+  const RestaurantCard = (props) => {
+    const { resData, } = props;
 
-  const {
-    rating,
-    cuisines,
-    costForTwo,
-    deliveryTime,
-  } = resData;
+    const {
+      name,
+      cloudinaryImageId,
+      rating,
+      cuisines,
+      costForTwo,
+      
+      deliveryTime,
 
-  return (
-    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
-      <img className="cardImg" src={CDN_URL + cloudinaryImageId} />
+    } = resData;
 
-      <h3>{name}</h3>
-      <h4>{cuisines.join(", ")}</h4>
-      <h4>Rating:{rating}</h4>
-      <h4>{costForTwo} for Two</h4>
-      <h4>DeliveryTime:{deliveryTime}</h4>
-    </div>
-  );
-};
+    return (
+      <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+        <img className="cardImg" src={CDN_URL + cloudinaryImageId} />
 
-export default RestaurantCard;
+        <h3>{name}</h3>
+        <h4>{cuisines.join(", ")}</h4>
+        <h4>Rating:{rating}</h4>
+        <h4>{costForTwo} for Two</h4>
+        <h4>DeliveryTime:{deliveryTime}</h4>
+      </div>
+    );
+  };
+
+  export default RestaurantCard;

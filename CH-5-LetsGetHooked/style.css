@@ -65,7 +65,7 @@ margin: 10px;
 
 
 
-.search{
+.filter{
 display: flex;
 justify-content: center;
 background-color: #e1ecce;
@@ -81,12 +81,13 @@ background-color: #e1ecce;
     width: 30%;
 
 }
-#btn-1{
+.filter-btn{
     border: 2px solid black ;
     border-radius: 50px;
     cursor: pointer;
     margin: 10px;
     padding: 10px;
+    
 }
 
 .input{
