@@ -16,6 +16,7 @@ import resList from "../utils/MockData";
   
             }
   )
+   
         }
         </div>
       </div>
